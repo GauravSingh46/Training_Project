@@ -7,12 +7,7 @@ import javax.persistence.Id;
 public class Doctor {
     @Id
     private Long id;
-
-    private String firstName;
-
-    private String middleName;
-
-    private String lastName;
+    private String name;
     private String doctorType;
     private String address;
     private String contactNo;
@@ -21,16 +16,8 @@ public class Doctor {
         return id;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getMiddleName() {
-        return middleName;
-    }
-
-    public String getLastName() {
-        return lastName;
+    public String getName() {
+        return name;
     }
 
     public String getDoctorType() {
@@ -49,16 +36,8 @@ public class Doctor {
         this.id = id;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setMiddleName(String middleName) {
-        this.middleName = middleName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setDoctorType(String doctorType) {
